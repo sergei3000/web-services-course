@@ -9,3 +9,11 @@ curl --header "Content-Type: application/json" \
   --request POST \
   --data '{"flower":"1,2,3,7"}' \
   http://localhost:5000/iris_post
+
+  # how to create an instance at aws ec2
+  https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/
+
+  # ssh to aws ec2
+ssh -i ~/.ssh/MyKeyPair.pem ec2-user@18.220.35.31
+# Public DNS: ec2-18-220-35-31.us-east-2.compute.amazonaws.com
+ssh -i ~/.ssh/MyKeyPair.pem ec2-user@ec2-18-220-35-31.us-east-2.compute.amazonaws.com
