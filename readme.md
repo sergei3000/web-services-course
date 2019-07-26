@@ -17,3 +17,11 @@ curl --header "Content-Type: application/json" \
 ssh -i ~/.ssh/MyKeyPair.pem ec2-user@18.220.35.31
 # Public DNS: ec2-18-220-35-31.us-east-2.compute.amazonaws.com
 ssh -i ~/.ssh/MyKeyPair.pem ec2-user@ec2-18-220-35-31.us-east-2.compute.amazonaws.com
+
+# check what's taking up port
+netstat -vanp tcp | grep 5001
+sudo lsof -i :5001
+
+# start container
+docker-compose up
+docker-compose up --build #and build
