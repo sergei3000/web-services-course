@@ -10,15 +10,18 @@ curl --header "Content-Type: application/json" \
   --data '{"flower":"1,2,3,7"}' \
   http://localhost:5000/iris_post
 
-  # how to create an instance at aws ec2
-  https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/
+# how to create an instance at aws ec2
+https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/
 
-  # ssh to aws ec2
+# ssh to aws ec2
 ssh -i ~/.ssh/MyKeyPair.pem ec2-user@18.220.35.31
 
 Public DNS: ec2-18-220-35-31.us-east-2.compute.amazonaws.com
 
 ssh -i ~/.ssh/MyKeyPair.pem ec2-user@ec2-18-220-35-31.us-east-2.compute.amazonaws.com
+
+# how to connect without .pem
+add text from local id_rsa.pub to authorized keys on amazon
 
 # check what's taking up port
 netstat -vanp tcp | grep 5001
